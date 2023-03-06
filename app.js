@@ -58,6 +58,7 @@ window.onload = function(){
 
     document.addEventListener("touchstart", (e)=>{
         if(e.type == "touchstart"){
+          e.preventDefault()
             velocityY = -6
 
             if(gameOver){
@@ -78,6 +79,7 @@ window.onload = function(){
 
     document.addEventListener("keydown", (e)=>{
         if(e.key == "Space" || e.key == "ArrowUp"){
+          e.preventDefault()
             velocityY = -6
 
             if(gameOver){
