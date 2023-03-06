@@ -57,8 +57,8 @@ window.onload = function(){
     setInterval(placePipes, 1500)
 
     document.addEventListener("touchstart", (e)=>{
+        e.preventDefault()
         if(e.type == "touchstart"){
-          e.preventDefault()
             velocityY = -6
 
             if(gameOver){
@@ -78,8 +78,8 @@ window.onload = function(){
     })
 
     document.addEventListener("keydown", (e)=>{
+        e.preventDefault()
         if(e.key == "Space" || e.key == "ArrowUp"){
-          e.preventDefault()
             velocityY = -6
 
             if(gameOver){
